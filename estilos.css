@@ -198,6 +198,11 @@ body {
     width: 125px;
 }
 
+.logo__highlight {
+    filter: drop-shadow(0 0 12px rgba(32, 145, 249, 0.8));
+    transition: all 0.3s ease-in-out;
+}
+
 /* info */
 
 .info{

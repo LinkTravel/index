@@ -203,6 +203,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+
 /* info */
 
 .info{
@@ -730,4 +731,23 @@ body {
         width: 100%;
         */
     }
+}
+
+
+/* Estilos para presentación de Canva fullscreen */
+.fullscreen-canva {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canva-presentation-full {
+    width: 100%;
+    height: 100%;
+    border: none;
 }

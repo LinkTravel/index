@@ -734,20 +734,35 @@ body {
 }
 
 
-/* Estilos para presentación de Canva fullscreen */
 .fullscreen-canva {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background: #000;
+    background: url("https://img.freepik.com/vector-premium/fondo-borroso-gris-claro-blanco-degradado-radial_53562-6788.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: none; /* Bloquea interacción */
 }
 
 .canva-presentation-full {
-    width: 100%;
+    width: 79%;
     height: 100%;
-    border: none;
+    border: none; 
+    pointer-events: none; /* Asegura que no reciba clics */
+}
+
+/* Ajuste para móviles: quitar sombras largas en Canva */
+@media (max-width: 600px) {
+    .canva-presentation-full {
+        width: 100%;
+        height: auto;
+        box-shadow: none; /* Elimina sombras en móvil */
+    }
+    .fullscreen-canva {
+        background: #000; /* Fondo sólido para que solo se vea la presentación */
+        height: auto;
+        padding: 10px 0;
+    }
 }
